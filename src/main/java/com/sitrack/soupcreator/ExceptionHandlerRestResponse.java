@@ -1,13 +1,12 @@
 package com.sitrack.soupcreator;
 
 import com.sitrack.soupcreator.entities.ResponseStandard;
+import com.sitrack.soupcreator.exceptions.ResponseError;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-
-import java.util.ArrayList;
 
 @ControllerAdvice
 public class ExceptionHandlerRestResponse extends ResponseEntityExceptionHandler {
